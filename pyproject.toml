@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fcd-dev"
+version = "0.1.0"
+description = ""
+authors = ["Francisco Dias <fcdiass@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fcd_dev"}]
+
+[tool.poetry.dependencies]
+python = "^3.7.9,<3.10.0"
+damagezonemodeling = { path = "./damagezonemodeling/", develop = true }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
