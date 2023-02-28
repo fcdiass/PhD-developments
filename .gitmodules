@@ -1,0 +1,3 @@
+[submodule "damagezonemodeling"]
+	path = damagezonemodeling
+	url = https://git.tecgraf.puc-rio.br/geoband/damagezonemodeling.git
