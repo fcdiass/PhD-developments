@@ -122,7 +122,7 @@ def main(debug=False, graphical_interface=True, write_input_files=True):
 
     # Definição do estado de tensões
     # Tensão vertical efetiva de compressão igual a 10 MPa e K0_x = K0_z = 1.0
-    damagezone.init_cond.set_stress(SPConstant(-10, 1.0), verify_compatibility=False)
+    damagezone.init_cond.set_stress(SPConstant(-10, 1.0), verify_material=False)
 
     # Gera a malha do modelo
     damagezone.mesh.generate(recombine=True)
